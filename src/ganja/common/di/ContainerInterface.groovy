@@ -9,4 +9,6 @@ interface ContainerInterface {
     DefinitionInterface register(String id, String classNameOrServiceId)
 
     def get(String id)
+
+    Map findServiceIdsByTag(String tag)
 }
