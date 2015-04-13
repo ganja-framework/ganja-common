@@ -4,6 +4,8 @@ interface DefinitionInterface {
 
     DefinitionInterface setArguments(def args)
 
+    DefinitionInterface calls(String method, def args)
+
     void setTags(List tags)
 
     void addTag(String tag, Object attributes)
