@@ -88,7 +88,7 @@ uploadArchives {
                 authentication(userName: sonatypeUsername, password: sonatypePassword)
             }
             pom.version = version
-            pom.artifactId = "common-api"
+            pom.artifactId = "common"
             pom.groupId = "ganja"
             pom.project {
                 licenses {
