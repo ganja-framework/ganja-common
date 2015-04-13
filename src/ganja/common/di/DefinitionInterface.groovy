@@ -6,6 +6,8 @@ interface DefinitionInterface {
 
     DefinitionInterface calls(String method, def args)
 
+    DefinitionInterface calls(String method)
+
     void setTags(List tags)
 
     void addTag(String tag, Object attributes)
