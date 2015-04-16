@@ -22,7 +22,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath "net.saliman:gradle-cobertura-plugin:2.2.4"
+        classpath "net.saliman:gradle-cobertura-plugin:2.2.8"
     }
 }
 
@@ -37,18 +37,8 @@ repositories {
 }
 
 dependencies {
-    compile 'org.codehaus.groovy:groovy-all:2.4.1'
+    compile 'org.codehaus.groovy:groovy-all:2.4.3'
     testCompile 'org.spockframework:spock-core:1.0-groovy-2.4'
-}
-
-if (!hasProperty('sonatypeUsername')) {
-    ext.sonatypeUsername = ''
-}
-if (!hasProperty('sonatypePassword')) {
-    ext.sonatypePassword = ''
-}
-if (!hasProperty('sonatypeUrl')) {
-    ext.sonatypeUrl = ''
 }
 
 task sourcesJar(type: Jar, dependsOn: classes) {
