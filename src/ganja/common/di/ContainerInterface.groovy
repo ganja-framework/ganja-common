@@ -6,7 +6,7 @@ interface ContainerInterface {
 
     String getParameter(String key)
 
-    DefinitionInterface register(String id, String classNameOrServiceId)
+    DefinitionInterface register(String id, def classNameOrServiceId)
 
     def get(String id)
 
