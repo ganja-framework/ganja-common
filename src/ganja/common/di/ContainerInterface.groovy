@@ -2,7 +2,7 @@ package ganja.common.di
 
 interface ContainerInterface {
 
-    void setParameter(String key, String value)
+    void setParameter(String key, def value)
 
     String getParameter(String key)
 
