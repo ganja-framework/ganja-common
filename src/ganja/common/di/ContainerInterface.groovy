@@ -4,7 +4,7 @@ interface ContainerInterface {
 
     void setParameter(String key, def value)
 
-    String getParameter(String key)
+    def getParameter(String key)
 
     DefinitionInterface register(String id, def classNameOrServiceId)
 
